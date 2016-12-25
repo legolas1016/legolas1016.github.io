@@ -1,571 +1,505 @@
 <!DOCTYPE HTML>
-
-<html lang="en">
-  
+<html>
 <head>
-  <meta charset="utf-8">
-  
-  <title>Justin</title>
-  <meta name="author" content="Jianfeng Qiu">
-  
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title></title>
+    <meta name="author" content="Jianfeng Qiu">
+    
+    
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-  <meta property="og:site_name" content="Justin"/>
+    
+    <meta property="og:site_name" content="Justin"/>
 
-  
+    
     <meta property="og:image" content="undefined"/>
-  
-
-  
-    <meta http-equiv="Content-Language" content="en"/>
-  
-
-  <link href="/img/favicon.png" rel="icon">
-  
-    <link rel="apple-touch-icon" href="/img/apple-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="/img/apple-icon.png">
     
 
-  <link rel="alternate" href="/atom.xml" title="Justin" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  
-  <style type="text/css">
-  /* Tim Pietrusky advanced checkbox hack (Android <= 4.1.2) */
-body{ -webkit-animation: bugfix infinite 1s; }
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="Justin" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 
-  
-
-  
-    article .post-content-index .entry{max-height: 550px; overflow:hidden;}
-  
-</style>
-
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'null', 'auto');
-  ga('send', 'pageview');
- 
-</script>
-
-
-
-
-  
     
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
     
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
-
-  
-
-
-
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 
 <body>
-  <header id="header" class="inner"><div class="padding">
-	<div class="alignleft logo">
-	  <h1><a href="/">Justin</a></h1>
-	</div>
-	<nav id="main-nav" class="alignright">
-		<input type="checkbox" id="toggle" />
-		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick><i class="fa fa-bars"></i></label>
-	  <ul class="menu">
-	    
-	      <li><a href="/">Home</a></li>
-	    
-	      <li><a href="/archives">Archives</a></li>
-	    
-	    
-	  </ul>
-	</nav>
-	<div class="clearfix"></div>
-</div>
-</header>
-  <div id="page-heading-wrap">
-  	<div class="inner">
-      <div class="padding">
-    		
-          <h2></h2>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">Justin</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
         
-      </div>
-  	</div>
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        
+
+
+
+<div id="article-list" class="container main-container">
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2016/12/25/hello-world/">Hello World</a></h1>
+    
+
+
+            </div>
+
+            <time class="pink-link-context" datetime="2016-12-25T11:34:19.636Z"><a href="/2016/12/25/hello-world/">2016-12-25</a></time>
+
+            
+
+
+            
+        </div>
+
+        
+    </div>
+</article>
+
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="indigo-link-context"><a href="/2016/12/25/activiti/">activiti</a></h1>
+    
+
+
+            </div>
+
+            <time class="pink-link-context" datetime="2016-12-25T11:28:33.000Z"><a href="/2016/12/25/activiti/">2016-12-25</a></time>
+
+            
+
+
+            
+        </div>
+
+        
+    </div>
+</article>
+
+    
+
+    <ul class="pagination center-align">
+    <li class="disabled">
+        <a href="/"><i class="fa fa-angle-left"></i></a>
+    </li>
+    
+    
+        <li class="active pink"><a href="/">1</a></li>
+    
+    
+    <li class="disabled">
+        <a href="/"><i class="fa fa-angle-right"></i></a>
+    </li>
+ </ul>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
   </div>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper" class="padding">
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
+
+    </main>
+    <footer class="page-footer indigo darken-1">
     
-      <h1 class="title transition"><a href="/2016/12/25/机器学习1/">机器学习1</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2016-12-25T12:02:40.000Z">2016-12-25</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
 
-                
-                  <a href="/">Jianfeng Qiu</a>
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            <h1 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h1><p>维基百科，自由的百科全书</p>
-<p><strong>梯度下降法</strong>（英语：Gradient descent）是一个一阶<a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E4%BC%98%E5%8C%96" target="_blank" rel="external">最优化</a><a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95" target="_blank" rel="external">算法</a>，通常也称为<strong>最速下降法</strong>。 要使用梯度下降法找到一个函数的<a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%80%BC" target="_blank" rel="external">局部极小值</a>，必须向函数上当前点对应<a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6" target="_blank" rel="external">梯度</a>（或者是近似梯度）的<em>反方向</em>的规定步长距离点进行<a href="https://zh.wikipedia.org/wiki/%E8%BF%AD%E4%BB%A3" target="_blank" rel="external">迭代</a>搜索。如果相反地向梯度<em>正方向</em>迭代进行搜索，则会接近函数的<a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%80%BC" target="_blank" rel="external">局部极大值</a>点；这个过程则被称为<strong>梯度上升法</strong>。</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E6.8F.8F.E8.BF.B0" target="_blank" rel="external">1 描述</a><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E4.BE.8B.E5.AD.90" target="_blank" rel="external">1.1 例子</a><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E7.BC.BA.E7.82.B9" target="_blank" rel="external">1.2 缺点</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E5.8F.82.E9.98.85" target="_blank" rel="external">2 参阅</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E5.8F.82.E8.80.83.E6.96.87.E7.8C.AE" target="_blank" rel="external">3 参考文献</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#.E5.A4.96.E9.83.A8.E9.93.BE.E6.8E.A5" target="_blank" rel="external">4 外部链接</a></li>
-</ul>
-<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p><a href="https://zh.wikipedia.org/wiki/File:Gradient_descent.png" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Gradient_descent.png/350px-Gradient_descent.png" alt="img"></a></p>
-<p>梯度下降法的描述。</p>
-<p>梯度下降方法基于以下的观察：如果实值函数                    F        (                  x                )              {\displaystyle F(\mathbf {x} )}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0774265d2ef34bedcc0fd41464b73c42decfdbe0" alt="F({\mathbf  {x}})">在点                              a                      {\displaystyle \mathbf {a} }  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a957216653a9ee0d0133dcefd13fb75e36b8b9d" alt="\mathbf {a} ">处<a href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E5%BE%AE" target="_blank" rel="external">可微</a>且有定义，那么函数                    F        (                  x                )              {\displaystyle F(\mathbf {x} )}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0774265d2ef34bedcc0fd41464b73c42decfdbe0" alt="F({\mathbf  {x}})">在                              a                      {\displaystyle \mathbf {a} }  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a957216653a9ee0d0133dcefd13fb75e36b8b9d" alt="\mathbf {a} ">点沿着<a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6" target="_blank" rel="external">梯度</a>相反的方向                     −        ∇        F        (                  a                )              {\displaystyle -\nabla F(\mathbf {a} )}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d0ad491b40a7eef6aade67dafca802cf005a972" alt="-\nabla F({\mathbf  {a}})"> 下降最快。</p>
-<p>因而，如果</p>
-<p>对于                    γ        &gt;        0              {\displaystyle \gamma &gt;0}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/775a6435e4270cddf2cd7dcb486c20f7f4bb8cee" alt="\gamma &gt;0">为一个够小数值时成立，那么                    F        (                  a                )        ≥        F        (                  b                )              {\displaystyle F(\mathbf {a} )\geq F(\mathbf {b} )}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3304df416dd110899a2a231fa002d9efc54672e" alt="F({\mathbf  {a}})\geq F({\mathbf  {b}})">。</p>
-<p>考虑到这一点，我们可以从函数                    F              {\displaystyle F}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" alt="F">的局部极小值的初始估计                                          x                                0                                {\displaystyle \mathbf {x} <em>{0}}  ![{\mathbf  {x}}</em>{0}](<a href="https://wikimedia.org/api/rest_v1/media/math/render/svg/799c59f89751f24a2719c4da95f1acdd3e2faf52)出发，并考虑如下序列" target="_blank" rel="external">https://wikimedia.org/api/rest_v1/media/math/render/svg/799c59f89751f24a2719c4da95f1acdd3e2faf52)出发，并考虑如下序列</a>                                           x                                0                          ,                              x                                1                          ,                              x                                2                          ,        …              {\displaystyle \mathbf {x} <em>{0},\mathbf {x} </em>{1},\mathbf {x} <em>{2},\dots }  ![{\mathbf  {x}}</em>{0},{\mathbf  {x}}<em>{1},{\mathbf  {x}}</em>{2},\dots ](<a href="https://wikimedia.org/api/rest_v1/media/math/render/svg/64e384c90dfc7ea073cbc7eddf7990efa7fd5510)使得" target="_blank" rel="external">https://wikimedia.org/api/rest_v1/media/math/render/svg/64e384c90dfc7ea073cbc7eddf7990efa7fd5510)使得</a></p>
-<p>因此可得到</p>
-<p>如果顺利的话序列                    (                              x                                n                          )              {\displaystyle (\mathbf {x} <em>{n})}  ![({\mathbf  {x}}</em>{n})](<a href="https://wikimedia.org/api/rest_v1/media/math/render/svg/42c4ac385d2fc09aa0390781f96441e9b8615b95)收敛到期望的极值。注意每次迭代*步长*" target="_blank" rel="external">https://wikimedia.org/api/rest_v1/media/math/render/svg/42c4ac385d2fc09aa0390781f96441e9b8615b95)收敛到期望的极值。注意每次迭代*步长*</a>                    γ              {\displaystyle \gamma }  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" alt="\gamma ">可以改变。</p>
-<p>右侧的图片示例了这一过程，这里假设                    F              {\displaystyle F}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" alt="F">定义在平面上，并且函数图像是一个<a href="https://zh.wikipedia.org/wiki/%E7%A2%97" target="_blank" rel="external">碗</a>形。蓝色的曲线是<a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E9%AB%98%E7%BA%BF" target="_blank" rel="external">等高线</a>（<a href="https://zh.wikipedia.org/wiki/%E6%B0%B4%E5%B9%B3%E9%9B%86" target="_blank" rel="external">水平集</a>），即函数                    F              {\displaystyle F}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" alt="F">为常数的集合构成的曲线。红色的箭头指向该点梯度的反方向。（一点处的梯度方向与通过该点的<a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E9%AB%98%E7%BA%BF" target="_blank" rel="external">等高线</a>垂直）。沿着梯度<em>下降</em>方向，将最终到达碗底，即函数                    F              {\displaystyle F}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" alt="F">值最小的点。</p>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>梯度下降法处理一些复杂的非线性函数会出现问题，例如<a href="https://zh.wikipedia.org/wiki/Rosenbrock%E5%87%BD%E6%95%B8" target="_blank" rel="external">Rosenbrock函数</a></p>
-<p>其最小值在                    (        x        ,        y        )        =        (        1        ,        1        )              {\displaystyle (x,y)=(1,1)}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40dd7873f4b66b6cc9a37bfae96cecfb64af7947" alt="(x,y)=(1,1)">处，数值为                    f        (        x        ,        y        )        =        0              {\displaystyle f(x,y)=0}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01ede27471a9cc9a0c5eb6e1ebdc7afc8a086543" alt="f(x,y)=0">。但是此函数具有狭窄弯曲的山谷，最小值                    (        x        ,        y        )        =        (        1        ,        1        )              {\displaystyle (x,y)=(1,1)}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40dd7873f4b66b6cc9a37bfae96cecfb64af7947" alt="(x,y)=(1,1)">就在这些山谷之中，并且谷底很平。优化过程是之字形的向极小值点靠近，速度非常缓慢。</p>
-<p><a href="https://zh.wikipedia.org/wiki/File:Banana-SteepDesc.gif" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Banana-SteepDesc.gif/400px-Banana-SteepDesc.gif" alt="Banana-SteepDesc.gif"></a></p>
-<p>下面这个例子也鲜明的示例了”之字”的<strong>上升</strong>（非下降），这个例子用<strong>梯度上升</strong>（非梯度下降）法求                    F        (        x        ,        y        )        =        sin        ⁡                  (                                    1              2                                            x                          2                                −                                    1              4                                            y                          2                                +          3          )                cos        ⁡        (        2        x        +        1        −                  e                      y                          )              {\displaystyle F(x,y)=\sin \left({\frac {1}{2}}x^{2}-{\frac {1}{4}}y^{2}+3\right)\cos(2x+1-e^{y})}  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/339406aafe40c2a294dcc3cbdbb58ab2981ab5e7" alt="F(x,y)=\sin \left({\frac  {1}{2}}x^{2}-{\frac  {1}{4}}y^{2}+3\right)\cos(2x+1-e^{y})">的<strong>极大值</strong>（非极小值，实际是局部极大值）。</p>
-<p><a href="https://zh.wikipedia.org/wiki/File:Gradient_ascent_%28contour%29.png" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Gradient_ascent_%28contour%29.png/350px-Gradient_ascent_%28contour%29.png" alt="The gradient descent algorithm in action.（1: contour）"></a><a href="https://zh.wikipedia.org/wiki/File:Gradient_ascent_%28surface%29.png" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gradient_ascent_%28surface%29.png/450px-Gradient_ascent_%28surface%29.png" alt="The gradient descent algorithm in action.（2: surface）"></a></p>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>梯度下降法的缺点包括：<a href="https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95#cite_note-1" target="_blank" rel="external">[1]</a></p>
-<ul>
-<li>靠近极小值时速度减慢。</li>
-<li>直线搜索可能会产生一些问题。</li>
-<li>可能会“之字型”地下降。</li>
-</ul>
-<p>上述例子也已体现出了这些缺点。</p>
-
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2016/12/25/机器学习1/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
     </div>
-</article>
+</footer>
 
 
-
-
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
-    
-      <h1 class="title transition"><a href="/2016/12/25/hello-world/">Hello World</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2016-12-25T11:34:19.636Z">2016-12-25</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
-
-                
-                  <a href="/">Jianfeng Qiu</a>
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2016/12/25/hello-world/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
     </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
-    
-      <h1 class="title transition"><a href="/2016/12/25/activiti/">activiti</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2016-12-25T11:28:33.000Z">2016-12-25</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
-
-                
-                  <a href="/">Jianfeng Qiu</a>
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            <h1 id="Activiti-开发"><a href="#Activiti-开发" class="headerlink" title="Activiti 开发"></a>Activiti 开发</h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>几年前我在当时的公司曾经JBMP作为工作进行工作流应用的开发。当时用JBMP做开发陆续踩过一些坑，也积累了一些总结，可惜这些经验没有很好地记录下来。现在，我所在的部门需要开发一些OA工具，用于提高研发效率，由于这些OA工具牵涉到流程控制，自然而然地使用流程引擎也就列入了计划之中。不过这次不打算用JBMP，而是用Activiti.</p>
-<p>关于Activiti的开发，首先有两份文档，一份是<a href="http://www.activiti.org/userguide/" target="_blank" rel="external">官方的开发指南</a>,另一份是电子书<strong>Activiti in Action.pdf</strong></p>
-<h3 id="E1-使用Activiti-Explorer-UI还是定制开发UI"><a href="#E1-使用Activiti-Explorer-UI还是定制开发UI" class="headerlink" title="E1: 使用Activiti Explorer UI还是定制开发UI"></a>E1: 使用Activiti Explorer UI还是定制开发UI</h3><p>Activiti套件中提供了完整的用户表单开发功能，使用FormService就可以设计出基本的用户表单并在Activiti Explorer中运行，这样开发者就省去了开发UI的开发代价。</p>
-<p>对于要求不高的内部系统，Activiti 自带的UI功能可以满足基本的需求，但是如果期望设计出具有更好体验的UI，这个时候就只能自己开发用户界面了。其实在大多数的流程开发项目中，为了满足各种复杂的业务需求，直接使用Activiti Explorer的情况并不多。</p>
-<h3 id="E2-正确使用Activiti-Engine-API接口"><a href="#E2-正确使用Activiti-Engine-API接口" class="headerlink" title="E2: 正确使用Activiti Engine API接口"></a>E2: 正确使用Activiti Engine API接口</h3><p>Activiti Engine API提供了以下的接口</p>
-<ul>
-<li>FormService </li>
-<li>HistoryService</li>
-<li>IdentityService</li>
-<li>ManagementService</li>
-<li>RepositoryService</li>
-<li>RuntimeService</li>
-<li>TaskService</li>
-</ul>
-<p>对于Activiti的流程、数据地操作，要通过以上几个接口来实现。这是因为Activiti的运行数据是存储在数据库中的，包括流程（process instance)状态、任务（task)的状态、历史记录等。Activiti流程引擎在执行流程是从数据库中读取数据，处理，存储；因此要获取准确的数据必须通过API接口调用。</p>
-<p>举个例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">RuntimeService runtimeService = processEngine.getRuntimeService();</div><div class="line">ProcessInstance processInstance =  runtimeService.startProcessInstanceById();</div><div class="line">processInstance.getProcessVariables().put(<span class="string">"key"</span>,<span class="string">"value"</span>);</div></pre></td></tr></table></figure>
-<p>这段代码貌似向processInstance设置了一个变量，但是实际上操作是一个内存对象，变量值并不会被保存至数据库，正确的写法是</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ProcessInstance processInstance =  runtimeService.startProcessInstanceById();</div><div class="line">processInstance.getProcessVariables().put(<span class="string">"key"</span>,<span class="string">"value"</span>)</div></pre></td></tr></table></figure>
-<h3 id="E3-对流程进行封装"><a href="#E3-对流程进行封装" class="headerlink" title="E3: 对流程进行封装"></a>E3: 对流程进行封装</h3><p>尽管Activiti的API可以直接对流程进行操作，但是从协作编程的角度考虑，我们需要对流程进行封装（ProcessWrapper)。一般来说提供以下几类接口较为合适</p>
-<ul>
-<li>流程的启动（Input：启动参数；output:流程ID）</li>
-<li>执行Human Task接口（Input: 流程ID、任务参数；output:执行结果）</li>
-<li>状态接口（Input:流程ID; output:流程的状态。</li>
-</ul>
-<p>定义了这些接口后，流程的使用者就可以并行使用这些接口定义进行开发了，而流程开发可以专注在内部流程的设计、调试、优化。</p>
-<h3 id="E4-使用尽可能少的流程变量"><a href="#E4-使用尽可能少的流程变量" class="headerlink" title="E4: 使用尽可能少的流程变量"></a>E4: 使用尽可能少的流程变量</h3><p>我们曾经试图在流程中存储许多数据，这些数据中的很多跟流程的运行并没有决定关系，即不是决定流程走向的变量，也不是Human Task需要的变量，也不是调用外部服务时需要的变量。只是想利用Activiti的变量存储机制来存储一些数据。这么做的一个结果就是让流程的执行速度变慢，一般的我只会考虑以下变量</p>
-<ul>
-<li>决定流程走向的变量，比如在分支流程线上起作用的变量。</li>
-<li>调用外部服务（External Service) 需要的变量，但是也可以保存一个简单的主键数据，然后在调用外部服务时计算生成外部服务需要的参数变量。</li>
-<li>Human Task的参数，保存这些数据的原因是这些数据会被存入历史数据以备审核。</li>
-<li>在脚本任务(Script Task)中使用到的变量。</li>
-</ul>
-<h3 id="E5-使用回调方法来执行长时任务"><a href="#E5-使用回调方法来执行长时任务" class="headerlink" title="E5: 使用回调方法来执行长时任务"></a>E5: 使用回调方法来执行长时任务</h3><p>对于需要较长执行时间的任务，可以考虑回调的方法。即设置一个Human task 或 Event Message Trigger来触发回调事件继续流程的执行。</p>
-<h3 id="E6-流程之间的交互-Human-Task不仅仅是Human-Task"><a href="#E6-流程之间的交互-Human-Task不仅仅是Human-Task" class="headerlink" title="E6: 流程之间的交互, Human Task不仅仅是Human Task"></a>E6: 流程之间的交互, Human Task不仅仅是Human Task</h3><p>流程间的交互可以通过传变量，调用Human task的方法来交互。Activiti流程中的Human Task在现实中不一定必须由真实的用户来触发，很多时候系统也可以去调用complete Human Task, 这也给我们实现流程的自动交互提供了一种方式。</p>
-<h3 id="E7-Signal-Message-也可以用于流程交互"><a href="#E7-Signal-Message-也可以用于流程交互" class="headerlink" title="E7: Signal, Message 也可以用于流程交互"></a>E7: Signal, Message 也可以用于流程交互</h3><p>流程之间的通信，还有一个方便的作法是利用Singal  或 Message的机制来实现流程。</p>
-<h3 id="E8-调用子流程SubProcess"><a href="#E8-调用子流程SubProcess" class="headerlink" title="E8: 调用子流程SubProcess"></a>E8: 调用子流程SubProcess</h3><p>调用子流程的过程可以使用Call Activity，这种方法下子流程的定义是独立于父流程的，或者使用内嵌子流程，也就是子流程定义在父流程的内部。</p>
-<h3 id="E9-获取流程的执行状态"><a href="#E9-获取流程的执行状态" class="headerlink" title="E9: 获取流程的执行状态"></a>E9: 获取流程的执行状态</h3><ul>
-<li>通过获取Human Task的方式，来确定流程的位置；</li>
-<li>通过查询Active Activities节点的方式，来确定流程的位置；</li>
-<li>通过利用事件监听器或脚本任务（Script Task)在流程运行中设置代表流程状态的变量，并用它来确定流程的状态。</li>
-</ul>
-<h3 id="E10-变量Bean还是单体变量"><a href="#E10-变量Bean还是单体变量" class="headerlink" title="E10: 变量Bean还是单体变量"></a>E10: 变量Bean还是单体变量</h3><p>有时候把几个变量放到一个Bean中，将这个Bean作为变量存储体存储于流程中，这样作的好处是变量便于统一管理，可编程性也较高。但是一个副作用的，每一次Bean中的变量修改都会引发一次变量历史记录，同时也会需要理多的存储IO（Bean的大小肯定大于单个变量的大小）。比较好的作法是，将不发生变化的流程参数封装在Bean中，随着流程改变的变量单独存储为流程变量。</p>
-<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2016/12/25/activiti/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
-    </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
-    
-      <h1 class="title transition"><a href="/2016/12/25/first/">first</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2016-12-25T09:26:34.000Z">2016-12-25</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
-
-                
-                  <a href="/">Jianfeng Qiu</a>
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2016/12/25/first/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
-    </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
-    
-      <h1 class="title transition"><a href="/2016/12/25/gym/">first</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2016-12-25T09:26:34.000Z">2016-12-25</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
-
-                
-                  <a href="/">Jianfeng Qiu</a>
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            <h1 id="GATN"><a href="#GATN" class="headerlink" title="GATN"></a>GATN</h1><p>vdagfeas</p>
-<p><img src="/img/201612/1.jpg" alt="fdaf"><br>fda</p>
-
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2016/12/25/gym/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
-    </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
-    <aside id="sidebar" class="alignright"><div class="padding">
-	
-	  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:yoursite.com">
-  </form>
-</div>
-	
-	  
-<div class="widget recent-post">
-  <h3 class="title">最新文章</h3>
-  <ul class="entry">
-    
-      <li>
-        <a href="/2016/12/25/机器学习1/">机器学习1</a>
-      </li>
-    
-      <li>
-        <a href="/2016/12/25/hello-world/">Hello World</a>
-      </li>
-    
-      <li>
-        <a href="/2016/12/25/activiti/">activiti</a>
-      </li>
-    
-      <li>
-        <a href="/2016/12/25/first/">first</a>
-      </li>
-    
-      <li>
-        <a href="/2016/12/25/gym/">first</a>
-      </li>
-    
-  </ul>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
 </div>
 
-	
-	  
-	
-	  
-<div class="widget tag">
-  <h3 class="title">标签</h3>
-  
-    <a href="/tags/file-gan/">file, gan,<small>1</small></a>
-  
-</div>
 
-	
-</div></aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="padding">
-	<div class="alignleft">
-	  
-	  &copy; 2016 Jianfeng Qiu
-	  
-	  Powerd by <a href="http://hexo.io/" target="_blank">hexo</a>
-	  and Theme by <a href="https://github.com/halfer53/metro-light" target="_blank">metro-light</a>
-	</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
-	<div class="alignright">
-		
-		
-		
-		
-		
-		
-		
-	</div>
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
 
-	<div class="clearfix"></div>
-</div>
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
 
-<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div></footer>
-  
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
 
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-
+<script src="/js/prettify.js"></script>
 <script type="text/javascript">
-$(window).scroll(function() {
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
 
-    if($(this).scrollTop() > 400) {
-        $('.scroll-top').fadeIn(200);
-    } else {
-        $('.scroll-top').fadeOut(200);
-    }
-});
 
-$('.scroll-top').bind('click', function(e) {
-    e.preventDefault();
-    $('body,html').animate({scrollTop:0},200);
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 
 
 </body>
